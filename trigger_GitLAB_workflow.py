@@ -2,7 +2,7 @@ import requests
 import time
 
 # Konfigurationseinstellungen
-token = 'gtlab_token'  
+token = ''  
 headers = {
     'Private-Token': token
 }
