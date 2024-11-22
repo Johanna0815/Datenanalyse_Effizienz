@@ -2,7 +2,7 @@ import requests
 import time
 
 # Konfigurationseinstellungen
-token = 'glpat-ywyuRx6xyjreahc7ggCW'  
+token = 'gtlab_token'  
 headers = {
     'Private-Token': token
 }

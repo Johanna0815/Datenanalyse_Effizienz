@@ -1,10 +1,20 @@
 import requests
 import time
 
+
+from dotenv import load_dotenv
+import os
+
+# Lade die .env-Datei
+load_dotenv()
+
+
+
+
 # persönlichen Zugangsdaten GitHub 
-token = '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'
+github_token = os.getenv("GITHUB_TOKEN")
 headers = {
-    'Authorization': f'Bearer {token}',
+    'Authorization': f'Bearer {github_token}',
     'Accept': 'application/vnd.github.v3+json'
 }
 

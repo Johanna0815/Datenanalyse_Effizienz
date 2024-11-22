@@ -5,12 +5,21 @@ from datetime import datetime
 import math
 import numpy as np
 
+
+
+from dotenv import load_dotenv
+import os
+
+# Lade die .env-Datei
+load_dotenv()
+
+
 # GitLab API-Konfiguration
 gitlab_project_id = "62053421"
 gitlab_headers = {}
 
 # GitHub API-Konfiguration
-github_token = "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"
+github_token = os.getenv("GITHUB_TOKEN")
 github_owner = "Johanna0815"
 github_repo = "python_Konsolenanwendung"
 github_headers = {"Authorization": f"Bearer {github_token}"}
