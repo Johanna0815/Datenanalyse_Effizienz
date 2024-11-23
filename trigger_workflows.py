@@ -8,9 +8,6 @@ import os
 # Lade die .env-Datei
 load_dotenv()
 
-
-
-
 # persönlichen Zugangsdaten GitHub 
 github_token = os.getenv("GITHUB_TOKEN")
 headers = {

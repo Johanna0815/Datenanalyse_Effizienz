@@ -38,7 +38,7 @@ with open(csv_path, 'w', newline='') as file:
     page = 1
     while completed_jobs < 101:
         api_url = f"https://gitlab.com/api/v4/projects/{repo_id}/jobs?per_page={per_page}&page={page}"
-        response = requests.get(api_url, headers=headers)
+        response = requests.get(api_url, headers=gitlab_headers)
         data = response.json()
 
         if not data or 'message' in data:
